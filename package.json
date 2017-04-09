@@ -1,0 +1,22 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asalazarb/electron-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asalazarb/electron-test/issues"
+  },
+  "homepage": "https://github.com/asalazarb/electron-test#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.4.13"
+  }
+}
