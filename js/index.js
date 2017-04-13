@@ -2,6 +2,8 @@ const {app} = require('electron')
 const {BrowserWindow} = require('electron')
 const path = require('path')
 const url = require('url')
+const shell = require('shelljs')
+
 
 app.on('ready', () => {
   let win = new BrowserWindow({show: true})
@@ -23,4 +25,10 @@ exports.openWindow = (filename) =>{
     protocol: 'file:',
     slashes: true
   }))
+}
+
+exports.commit = () =>{
+  shell.config.execPath = '/usr/local/bin/node';
+  var str = shell.exec('git status');
+  return str;
 }
